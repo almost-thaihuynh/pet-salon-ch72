@@ -45,3 +45,27 @@ console.log(`Hello my name is ${student3.name} and I am ${student3.age} years ol
 
 let p = document.getElementById("paragraph");
 p.innerHTML = `Hello my name is ${student2.name} and I am ${student2.age} years old.`;
+
+// ==== Object Constructor ====
+
+function Student(nameValue, ageValue, isStudentValue){
+    this.name = nameValue;
+    this.age = ageValue;
+    this.isStudent = isStudentValue;
+};
+
+let student = new Student("Fernanda", 34, false);
+console.log(student.name);
+console.log(student.age);
+console.log(student.isStudent);
+console.log(`Student: ${student.isStudent}\nAge:${student.age}`);
+
+// Products
+
+function Products(name,price){
+    this.name = name;
+    this.price = price;
+}
+
+let prod = new Products("Apple", 10);
+console.log(`The product is ${prod.name}, and the price is ${prod.price}.`)
