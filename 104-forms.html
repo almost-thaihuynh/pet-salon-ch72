@@ -18,35 +18,68 @@
 
             <div class="mb-3">
                 <label class="form-label">Name</label>
-                <input class="form-control" type="text" id="" placeholder="Apple">
+                <input id="productName" class="form-control" type="text" id="" placeholder="Apple">
             </div>
 
 
             <div class="mb-3">
                 <label class="form-label">Price</label>
-                <input class="form-control" type="text" id="" placeholder="12">
+                <input id="productPrice" class="form-control" type="text" id="" placeholder="12">
 
 
             <div class="mb-3">
                 <label class="form-label">Category</label>
-                <select class="form-select" type="text" id="">
+                <select id="productCategory" class="form-select" type="text" id="">
                     <option value="">Select a category</option>
-                    <option value="fruits">Fruits</option>
-                    <option value="electronics">Electronics</option>
+                    <option value="Fruits">Fruits</option>
+                    <option value="Electronics">Electronics</option>
                 </select>
 
             </div>
 
             <div class="d-flex justify-content-end gap-3">
 
-                <button class="btn btn-primary" type="submit">Register</button>
+                <button onclick="registerProduct(event)" class="btn btn-primary" type="submit">Register</button>
                 
                 <button class="btn btn-secondary" type="reset">Reset</button>
             </div>
 
         </form>
 
+   
+
     </section>
+
+    <section class="m-4">
+        <h2>Registered Products</h2>
+        
+        <!-- TABLE -->
+         <table class="table mt-4">
+            <!--Table Header-->
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Delete</th>
+            </tr>
+
+            <!--TABLE BODY-->
+            <tbody id="body">
+                <tr>
+                    <td>Apple</td>
+                    <td>12</td>
+                    <td>Fruits</td>
+                    <td><button id="" class="btn btn-danger">Delete</button></td>
+                </tr>
+            </tbody>
+         </table>
+
+     
+
+
+    </section>
+
+    <script src="./scripts/104-form.js"></script>
 
 </body>
 </html>
