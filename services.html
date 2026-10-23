@@ -34,6 +34,34 @@
 
     <h1>Services Page</h1>
 
+    <form class="bg-light p-4 border rounded mt-3">
+
+            <div class="mb-3">
+                <label class="form-label">Service</label>
+                <input id="serviceName" class="form-control" type="text" placeholder="Premium Bath">
+            </div>
+
+
+            <div class="mb-3">
+                <label class="form-label">Description</label>
+                <input id="serviceDescription" class="form-control" type="text" placeholder="Includes...">
+            </div>
+
+
+            <div class="mb-3">
+                <label class="form-label">Price</label>
+                <input id="servicePrice" class="form-control" type="text" placeholder="10.99">
+
+            </div>
+
+            <div class="d-flex justify-content-end gap-3">
+
+                <button onclick="registerProduct(event)" class="btn btn-primary" type="submit">Register</button>
+                
+                <button class="btn btn-secondary" type="reset">Reset</button>
+            </div>
+
+        </form>
 <!-- Bootstrap -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
