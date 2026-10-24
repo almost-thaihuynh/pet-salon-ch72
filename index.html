@@ -1,44 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Bootstrap Styles -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
-    <title>Home</title>
-</head>
-<body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Pet Salon</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="registrations.html">Registration</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="services.html">Services</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-    <h1>About Us</h1>
-    <p id="salonInfo"></p>
-
-<!-- Bootstrap -->
- <script src="./scripts/salon.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
- 
-  </body>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap Styles -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/home.css?v=4">
+        <meta name="description" content="Fresh cuts, bubbly baths, and happy paws at This Guys Pet Salon.">
+        <title>This Guys Pet Salon | Good fur days</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg salon-nav" aria-label="Main navigation">
+            <div class="container-fluid">
+                <a class="navbar-brand salon-brand" href="index.html">
+                    <img src="images/salon-logo.svg" width="58" height="58" alt="">
+                    <span>This Guys<small>PET SALON</small>
+                    </span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="registrations.html">Registration</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <section class="pet container">
+                <div>
+                    <p class="section-label">A LITTLE PAMPERING. A LOT OF TAIL WAGS.</p>
+                    <h1>Good fur days<br>start <em>here.</em>
+                    </h1>
+                    <p class="intro">From muddy paws to main-character energy. Give your best friend a fresh cut, a bubbly bath, and their moment to shine.</p>
+                    <div class="pet-actions">
+                        <a class="salon-button" href="registrations.html">Register your pet</a>
+                        <a class="text-link" href="#services">Explore the good stuff</a>
+                    </div>
+                    <p class="pet-note">Grooming · Baths · Nail trims · Happy pets</p>
+                </div>
+                <div class="pet-photo">
+                    <img src="images/hero.png" alt="Happy golden retriever wearing a teal bandana in a sunny salon" width="1536" height="1024" fetchpriority="high">
+                    <span class="photo-sticker">Fresh look.<br>
+                        <strong>Same best friend.</strong>
+                    </span>
+                </div>
+            </section>
+            <div class="ribbon" aria-hidden="true">GOOD FUR DAYS <span>✦</span> CLEAN PAWS CLUB <span>✦</span> LOOKIN’ FETCH <span>✦</span> THIS GUYS PET SALON</div>
+            <section class="container section-space" id="services">
+                <div class="section-heading">
+                    <div>
+                        <p class="section-label">THE PAMPER MENU</p>
+                        <h2>A little care.<br>A whole lot of cute.</h2>
+                    </div>
+                    <p>Pick their perfect refresh.<br>Tap a photo for a closer look.</p>
+                </div>
+                <!-- Bootstrap: 1 card per row on phones, 3 per row on larger screens. -->
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <article class="service-card">
+                            <button class="photo-button" type="button" onclick="showPhoto('images/grooming.png', 'Grooming — a fresh brush and a fluffy finish.')" aria-label="Enlarge grooming photo">
+                                <img src="images/grooming.png" alt="Groomer brushing a fluffy white poodle" loading="lazy" width="1536" height="1024">
+                            </button>
+                            <div class="card-copy">
+                                <span class="service-number">01 / THE FRESH CUT</span>
+                                <h3>Grooming</h3>
+                                <p>Brush out the bedhead and bring on the fluff. A tidy coat for their next big adventure.</p>
+                                <a href="registrations.html">Choose grooming</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="service-card">
+                            <button class="photo-button" type="button" onclick="showPhoto('images/bath.png', 'Bath time — bubbles, a gentle rinse, and a fresh start.')" aria-label="Enlarge bath photo">
+                                <img src="images/bath.png" alt="Beagle receiving a gentle rinse in a bathing tub" loading="lazy" width="1536" height="1024">
+                            </button>
+                            <div class="card-copy">
+                                <span class="service-number">02 / THE BUBBLE BREAK</span>
+                                <h3>Bath time</h3>
+                                <p>For the puddle enthusiasts. Wash away the outdoor adventures and leave feeling fresh.</p>
+                                <a href="registrations.html">Choose a bath</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="service-card">
+                            <button class="photo-button" type="button" onclick="showPhoto('images/nail-trim.png', 'Nail trims — a little attention for those adventure-ready paws.')" aria-label="Enlarge nail trimming photo">
+                                <img src="images/nail-trim.png" alt="Groomer carefully trimming a golden retriever's nails" loading="lazy" width="1536" height="1024">
+                            </button>
+                            <div class="card-copy">
+                                <span class="service-number">03 / THE PAW POLISH</span>
+                                <h3>Nail trims</h3>
+                                <p>A small detail that deserves a little attention. Keep those paws ready for their next stroll.</p>
+                                <a href="registrations.html">Choose a nail trim</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="makeover-section">
+                <div class="container makeover-grid">
+                    <div class="makeover-image">
+                        <img id="makeoverPhoto" src="images/after.png" alt="Apricot poodle with a neat haircut and teal bandana" loading="lazy" width="1312" height="1200">
+                        <span class="image-label" id="makeoverLabel" aria-live="polite">AFTER THE PAMPER</span>
+                    </div>
+                    <div class="makeover-copy">
+                        <p class="section-label">THE GLOW-UP CORNER</p>
+                        <h2>Same personality.<br>
+                            <em>Extra polish.</em>
+                        </h2>
+                        <p>A little shaggy? Absolutely adorable. Freshly groomed? Also absolutely adorable. Take a peek at our imagined makeover.</p>
+                        <div class="makeover-controls" role="group" aria-label="Show makeover photo">
+                            <button type="button" id="beforeButton" class="btn btn-outline-success" onclick="showBefore()" aria-pressed="false">Before</button>
+                            <button type="button" id="afterButton" class="btn btn-outline-success" onclick="showAfter()" aria-pressed="true">After ✦</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container section-space about-grid">
+                <div class="about-photos">
+                    <img class="salon-photo" src="images/salon.png" alt="Bright salon with teal cabinetry and sunny grooming stations" loading="lazy" width="1536" height="1024">
+                    <img class="groomer-photo" src="images/groomer.png" alt="Friendly groomer beside a happy golden retriever" loading="lazy" width="1536" height="1024">
+                </div>
+                <div>
+                    <p class="section-label">MEET THIS GUYS PET SALON</p>
+                    <h2>Big love for<br>little paws.<br>
+                        <em>And big ones, too.</em>
+                    </h2>
+                    <p id="salonInfo">
+                    </p>
+                    <a class="salon-button" href="registrations.html">Let’s meet your best friend</a>
+                </div>
+            </section>
+            <section class="container register-box">
+                <p class="section-label">THEIR NEXT GOOD FUR DAY IS CALLING</p>
+                <h2>More fluff.<br>Less ruff.</h2>
+                <a class="salon-button" href="registrations.html">Register your pet</a>
+            </section>
+        </main>
+        <footer class="salon-footer container">
+            <a class="salon-brand footer-brand" href="index.html">
+                <img src="images/salon-logo.svg" width="54" height="54" alt="">
+                <span>This Guys<small>PET SALON</small>
+                </span>
+            </a>
+            <h2>Fresh Cuts. Four Paws. Big Personality.</h2>
+            <p>Built with a little HTML, a little CSS, and a whole lot of tail wags.</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="registrations.html">Registration</a>
+            </div>
+            <p class="copyright">&copy; 2026 Thai Huynh | Paw-fectly Executed</p>
+            <p class="project-note">A class project · AI-generated salon photography</p>
+        </footer>
+        <dialog id="photoDialog" aria-label="Salon photo preview">
+            <button class="close-photo btn btn-secondary" onclick="closePhoto()" type="button" aria-label="Close photo preview">Close</button>
+            <img id="dialogPhoto" alt="">
+            <p id="dialogCaption">
+            </p>
+        </dialog>
+        <!-- Bootstrap -->
+        <script src="./scripts/salon.js">
+        </script>
+        <script src="./scripts/home.js">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+    </body>
 </html>

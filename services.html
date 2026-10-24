@@ -7,12 +7,13 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="styles/home.css?v=4">
     <title>Services Page</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg salon-nav">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Pet Salon</a>
+    <a class="navbar-brand salon-brand" href="index.html"><img src="images/salon-logo.svg" width="58" height="58" alt=""><span>This Guys<small>PET SALON</small></span></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -25,43 +26,129 @@
           <a class="nav-link" href="registrations.html">Registration</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="services.html">Services</a>
+          <a class="nav-link active" aria-current="page" href="services.html">Services</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
-    <h1>Services Page</h1>
+    <main class="container section-space">
+        <header class="page-heading">
+            <h1>Salon services</h1>
+            <p class="intro">From a fresh haircut to clean paws, find the right refresh for your pet.</p>
+        </header>
+        <!-- Bootstrap shows three service cards across, then stacks them on phones. -->
+        <section class="mb-5" aria-label="Our services">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <article class="service-card">
+                        <img class="img-fluid" src="images/grooming.png" alt="Groomer brushing a white poodle" loading="lazy">
+                        <div class="card-copy">
+                            <h2 class="h3">Grooming</h2>
+                            <p>A coat refresh with a haircut shaped to your pet's breed and your preferred look.</p>
+                            <ul>
+                                <li>Brushing and combing to remove loose fur</li>
+                                <li>A haircut or coat trim</li>
+                                <li>A tidy-up around the face, feet, and tail</li>
+                                <li>A final brush for a neat finish</li>
+                            </ul>
+                            <a href="registrations.html">Register for grooming</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="service-card">
+                        <img class="img-fluid" src="images/bath.png" alt="Beagle receiving a rinse in a bathing tub" loading="lazy">
+                        <div class="card-copy">
+                            <h2 class="h3">Bath</h2>
+                            <p>A wash and dry for pets who need to freshen up between haircuts or after a muddy adventure.</p>
+                            <ul>
+                                <li>A warm-water wash with pet shampoo</li>
+                                <li>A thorough rinse to remove shampoo and dirt</li>
+                                <li>Towel drying and a gentle blow-dry</li>
+                                <li>A brush-out to finish the coat</li>
+                            </ul>
+                            <a href="registrations.html">Register for a bath</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="service-card">
+                        <img class="img-fluid" src="images/nail-trim.png" alt="Groomer trimming a golden retriever's nails" loading="lazy">
+                        <div class="card-copy">
+                            <h2 class="h3">Nail trimming</h2>
+                            <p>A paw-focused visit for pets who need a nail tidy-up without a full grooming appointment.</p>
+                            <ul>
+                                <li>A check of nail length before trimming</li>
+                                <li>Careful trimming of the nail tips</li>
+                                <li>Smoothing of rough edges</li>
+                                <li>Attention to dewclaws, when present</li>
+                            </ul>
+                            <a href="registrations.html">Register for a nail trim</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <h2>Add a service</h2>
+        <p>Use the form below to enter a service name, description, and price.</p>
+        <!-- Bootstrap stacks the photo and form on smaller screens. -->
+        <div class="row g-4 align-items-center">
+            <div class="col-md-5 page-photo">
+                <img src="images/bath.png" alt="Beagle enjoying a gentle bath">
+            </div>
+            <div class="col-md-7">
 
-    <form class="bg-light p-4 border rounded mt-3">
+    <form class="salon-form">
 
             <div class="mb-3">
-                <label class="form-label">Service</label>
+                <label for="serviceName" class="form-label">Service</label>
                 <input id="serviceName" class="form-control" type="text" placeholder="Premium Bath">
             </div>
 
 
             <div class="mb-3">
-                <label class="form-label">Description</label>
+                <label for="serviceDescription" class="form-label">Description</label>
                 <input id="serviceDescription" class="form-control" type="text" placeholder="Includes...">
             </div>
 
 
             <div class="mb-3">
-                <label class="form-label">Price</label>
+                <label for="servicePrice" class="form-label">Price</label>
                 <input id="servicePrice" class="form-control" type="text" placeholder="10.99">
 
             </div>
 
-            <div class="d-flex justify-content-end gap-3">
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
 
-                <button onclick="registerProduct(event)" class="btn btn-primary" type="submit">Register</button>
+                <button onclick="registerProduct(event)" class="btn salon-button" type="submit">Register</button>
                 
-                <button class="btn btn-secondary" type="reset">Reset</button>
+                <button class="btn reset-button" type="reset">Reset</button>
             </div>
 
         </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="salon-footer container">
+            <a class="salon-brand footer-brand" href="index.html">
+                <img src="images/salon-logo.svg" width="54" height="54" alt="">
+                <span>This Guys<small>PET SALON</small>
+                </span>
+            </a>
+            <h2>We Handle the Fluff. You Take the Credit.</h2>
+            <p>A little shampoo, a little snip, and a whole lot of "who's a good dog?"</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="registrations.html">Registration</a>
+            </div>
+            <p class="copyright">&copy; 2026 Thai Huynh | Paw-fectly Executed</p>
+            <p class="project-note">A class project · AI-generated salon photography</p>
+        </footer>
+
 <!-- Bootstrap -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>

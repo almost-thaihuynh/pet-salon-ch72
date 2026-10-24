@@ -1,0 +1,46 @@
+{
+  "tool": "built-in image_gen",
+  "shared_prompt": "Photorealistic pet salon website photography; cream, teal and warm yellow; no text, logos or watermark.",
+  "images": [
+    {
+      "name": "hero",
+      "prompt": "Wide editorial photograph of a freshly groomed happy golden retriever in a bright upscale pet salon, teal bandana, soft cream walls, pale oak, teal cabinetry, warm daylight, full natural fur detail, welcoming atmosphere. Landscape hero composition with breathing room.",
+      "path": "/Users/thaihuynh/.codex/generated_images/01a166a8-150b-7a02-9d00-024e50dba4a6/exec-a605d525-f5eb-4d62-bd95-67fbdd190465.png"
+    },
+    {
+      "name": "grooming",
+      "prompt": "Editorial photograph of a groomer carefully brushing a relaxed fluffy white poodle on a grooming table in a bright upscale salon, cream walls teal cabinets pale oak, natural window light, anatomically accurate hands, realistic fur.",
+      "path": "/Users/thaihuynh/.codex/generated_images/01a166a8-150b-7a02-9d00-024e50dba4a6/exec-57ecc00d-86c9-4901-a1e9-94c15c52da29.png"
+    },
+    {
+      "name": "bath",
+      "prompt": "Editorial photograph of a cheerful wet beagle receiving a gentle bath in a clean pet washing tub, groomer's hands gently rinsing its back with a handheld sprayer, ears and face clear of spray, soft bubbles, cream and teal upscale salon, warm daylight.",
+      "path": "/Users/thaihuynh/.codex/generated_images/01a166a8-150b-7a02-9d00-024e50dba4a6/exec-adca8b0b-2d7f-4a5a-ac31-6cd3a9bfcddc.png"
+    },
+    {
+      "name": "nail-trim",
+      "prompt": "Editorial photograph of a groomer gently holding a relaxed dog's paw and carefully trimming one nail with pet nail clippers, realistic hands and paw anatomy, calm pet visible, clean bright cream and teal salon, natural daylight.",
+      "path": "/Users/thaihuynh/.codex/generated_images/01a166a8-150b-7a02-9d00-024e50dba4a6/exec-2ced789c-c45b-4800-b580-c13684f60588.png"
+    },
+    {
+      "name": "before",
+      "prompt": "Editorial portrait photograph of a small apricot miniature poodle before a haircut with naturally shaggy fluffy fur, seated facing camera on a pale oak grooming platform, teal bandana beside dog not worn, cream wall and teal cabinetry softly blurred, warm daylight. Cute healthy relaxed dog, no text.",
+      "path": "/Users/thaihuynh/.codex/generated_images/01a166a8-150b-7a02-9d00-024e50dba4a6/exec-c17ec08b-ea66-4858-b30c-a2c2c168c069.png"
+    },
+    {
+      "name": "after",
+      "prompt": "Editorial portrait photograph of a small apricot miniature poodle after a professional haircut, neat rounded teddy bear face and evenly trimmed fluffy coat, seated facing camera on a pale oak grooming platform wearing a teal bandana, cream wall and teal cabinetry softly blurred, warm daylight. Cute healthy relaxed dog, no text.",
+      "path": "/Users/thaihuynh/.codex/generated_images/01a166a8-150b-7a02-9d00-024e50dba4a6/exec-0385cca7-1303-4fec-9c96-8467f0f641a3.png"
+    },
+    {
+      "name": "salon",
+      "prompt": "Wide architectural editorial photograph of a beautiful bright pet salon interior, spotless grooming stations, pet washing tub, pale oak reception desk, cream walls, teal cabinetry, soft yellow accents, plants, large sunlit windows, welcoming practical space, no people.",
+      "path": "/Users/thaihuynh/.codex/generated_images/01a166a8-150b-7a02-9d00-024e50dba4a6/exec-a302fe48-0185-401d-a82e-f566a8b9ac1a.png"
+    },
+    {
+      "name": "groomer",
+      "prompt": "Editorial photograph of a friendly professional groomer wearing a teal apron kneeling beside a happy golden retriever in a bright pet salon, gentle hand on dog's shoulder, candid warmth, cream walls pale oak and teal cabinetry, soft daylight, realistic anatomy.",
+      "path": "/Users/thaihuynh/.codex/generated_images/01a166a8-150b-7a02-9d00-024e50dba4a6/exec-20c9de2d-ce27-496a-acba-64e38cc159f8.png"
+    }
+  ]
+}

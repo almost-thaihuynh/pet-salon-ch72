@@ -6,33 +6,43 @@ const pet1 = {
     breed: "Golden Retriever"
 };
 
-const pet2 = {
-    name: "Luna",
-    age: 3,
-    gender: "Female",
-    service: "Nail Trim",
-    breed: "Husky"
-};
+function displayPet(pet) {
+    let row = document.createElement("tr");
 
-const pet3 = {
-    name: "Milo",
-    age: 2,
-    gender: "Male",
-    service: "Bath",
-    breed: "Beagle"
-};
+    for (let value of [pet.name, pet.age, pet.breed, pet.gender, pet.service]) {
+        let cell = document.createElement("td");
+        cell.textContent = value;
+        row.appendChild(cell);
+    }
 
+    let deleteCell = document.createElement("td");
+    let deleteButton = document.createElement("button");
+    deleteButton.type = "button";
+    deleteButton.className = "btn btn-danger";
+    deleteButton.textContent = "Delete";
+    deleteButton.addEventListener("click", function () {
+        if (confirm("Delete this pet's registration?")) {
+            row.remove();
+        }
+    });
+    deleteCell.appendChild(deleteButton);
+    row.appendChild(deleteCell);
+    document.getElementById("petList").appendChild(row);
+}
 
-function pets() {
+function registerPet(event) {
+    event.preventDefault();
 
-    let petNames = `<ol>
-        <li>${pet1.name}</li>
-        <li>${pet2.name}</li>
-        <li>${pet3.name}</li>
-    </ol>`;
-    
-    document.getElementById("petList").innerHTML = petNames;
-};
+    let newPet = {
+        name: document.getElementById("petName").value.trim(),
+        age: document.getElementById("petAge").value,
+        breed: document.getElementById("petBreed").value.trim(),
+        gender: document.getElementById("petGender").value,
+        service: document.getElementById("petService").value
+    };
 
+    displayPet(newPet);
+    event.target.reset();
+}
 
-pets();
+displayPet(pet1);

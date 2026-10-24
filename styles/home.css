@@ -1,0 +1,353 @@
+/* Basic page colors and text */
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, #fff5df, #e3eee1);
+    color: #173e36;
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, serif;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+em {
+    color: #32745c;
+}
+
+a {
+    color: #164d43;
+}
+
+/* Logo and Bootstrap navigation */
+.salon-nav {
+    background-color: #fffaf0;
+    padding: 15px;
+}
+
+.salon-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: #173e36;
+    text-decoration: none;
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.salon-brand small {
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+/* These sections use two columns on larger screens. */
+.pet, .makeover-grid, .about-grid {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.pet > div, .makeover-grid > div, .about-grid > div {
+    width: 50%;
+    min-width: 0;
+}
+
+.section-label, .service-number {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.intro {
+    font-size: 18px;
+}
+
+.pet-note, .small-note {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+/* All main buttons have the same colors and centered text. */
+.salon-button {
+    display: inline-block;
+    padding: 14px 22px;
+    background-color: #164d43;
+    color: white;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.salon-button:hover {
+    background-color: #32745c;
+    color: white;
+}
+
+.pet-actions {
+    width: 230px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.pet-actions a {
+    display: block;
+    margin-top: 15px;
+}
+
+/* Photo frames. Width 100% keeps pictures inside their columns. */
+.pet-photo img, .makeover-image img, .about-photos img {
+    display: block;
+    width: 100%;
+    border: 6px solid #fffaf0;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px #becbbd;
+}
+
+.photo-sticker, .image-label {
+    display: block;
+    background-color: #f6ce72;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.ribbon {
+    padding: 18px;
+    background-color: #164d43;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    word-spacing: 4px;
+}
+
+.section-space {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.section-heading {
+    margin-bottom: 25px;
+}
+
+/* Bootstrap handles the service card columns. */
+.service-card {
+    height: 100%;
+    overflow: hidden;
+    background-color: #fffaf0;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px #becbbd;
+}
+
+.photo-button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background-color: #164d43;
+}
+
+.photo-button img {
+    display: block;
+    width: 100%;
+}
+
+.card-copy {
+    padding: 20px;
+}
+
+.card-copy a {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+.makeover-section {
+    background-color: #dce9d8;
+}
+
+.makeover-controls button {
+    margin: 5px;
+}
+
+.about-photos img {
+    margin-bottom: 15px;
+}
+
+.register-box {
+    padding: 35px 20px;
+    margin-bottom: 40px;
+    background-color: #f6ce72;
+    border-radius: 25px;
+    text-align: center;
+}
+
+/* Same dark, rounded footer idea as myBlog. */
+.salon-footer {
+    padding: 35px 20px;
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 25px 25px 0 0;
+    text-align: center;
+}
+
+.footer-brand, .footer-links a {
+    color: white;
+}
+
+.salon-footer h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.footer-links a {
+    display: inline-block;
+    margin: 10px;
+}
+
+.copyright, .project-note {
+    font-size: 12px;
+    color: #cccccc;
+}
+
+/* The photo preview opens when a service picture is clicked. */
+dialog {
+    width: 90%;
+    max-width: 850px;
+    max-height: 90vh;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fffaf0;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+dialog img {
+    display: block;
+    max-height: 65vh;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.close-photo {
+    display: block;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+
+/* Registration and services share the home page colors. */
+.page-heading {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.page-photo img {
+    display: block;
+    width: 100%;
+    border: 6px solid #fffaf0;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px #becbbd;
+}
+
+.salon-form, .pet-table {
+    padding: 25px;
+    background-color: #fffaf0;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px #becbbd;
+}
+
+.salon-form .form-label {
+    font-weight: bold;
+}
+
+.salon-form .form-control, .salon-form .form-select {
+    border-color: #a9bda7;
+    border-radius: 10px;
+}
+
+.salon-form .form-control:focus, .salon-form .form-select:focus {
+    border-color: #32745c;
+    box-shadow: 0 0 0 3px #dce9d8;
+}
+
+.reset-button {
+    padding: 14px 22px;
+    background-color: #f6ce72;
+    color: #173e36;
+    border-radius: 25px;
+}
+
+.reset-button:hover {
+    background-color: #e7bb5d;
+}
+
+.pet-table .table {
+    --bs-table-bg: #fffaf0;
+    --bs-table-color: #173e36;
+}
+
+.pet-table th {
+    background-color: #164d43;
+    color: white;
+}
+
+/* One media query: stack the columns on tablets and phones. */
+@media (max-width: 767px) {
+    .pet, .makeover-grid, .about-grid {
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .pet > div, .makeover-grid > div, .about-grid > div {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .salon-brand {
+        font-size: 22px;
+    }
+
+    .salon-brand img {
+        width: 44px;
+        height: 44px;
+    }
+
+    .section-space {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
