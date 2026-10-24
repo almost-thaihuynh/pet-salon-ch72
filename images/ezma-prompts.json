@@ -1,0 +1,16 @@
+{
+  "tool": "built-in image_gen",
+  "reference": "../myBlog/ezma.jpeg",
+  "images": [
+    {
+      "name": "ezma-bath",
+      "prompt": "Create a realistic landscape editorial photograph featuring Ezma, the exact female Sphynx cat from the reference: hairless slate gray skin, deeply wrinkled forehead, oversized triangular ears with pink interiors, dark face and pale pink muzzle markings. Preserve her distinctive identity. She is calmly standing in a shallow pet bathing basin while a groomer's realistic hands gently wipe her shoulder with a soft wet cloth, no spray on face, no exaggerated bubbles. Bright cream and teal pet salon with pale oak accents, warm window light. Close portrait, full ears visible, cozy gentle mood. No text or logos.",
+      "path": "/Users/thaihuynh/.codex/generated_images/01a166a8-150b-7a02-9d00-024e50dba4a6/exec-9133384d-36e2-4935-9012-08f8a7350415.png"
+    },
+    {
+      "name": "ezma-groomer",
+      "prompt": "Create a realistic landscape editorial photograph of Ezma, the exact female Sphynx cat in the reference, being cradled in a plush gray towel by a friendly groomer in a teal apron in a sunny cream and teal salon. Preserve her hairless slate gray skin, deeply wrinkled forehead, oversized triangular ears with pink interiors, dark face and pale pink muzzle markings. Cat is main subject with fully visible ears and relaxed natural expression, realistic hands, warm daylight, pale oak accents, no fur added, no text or logos.",
+      "path": "/Users/thaihuynh/.codex/generated_images/01a166a8-150b-7a02-9d00-024e50dba4a6/exec-ac195bc3-908f-4ffe-a545-86ff915bd7b4.png"
+    }
+  ]
+}
