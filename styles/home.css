@@ -169,9 +169,11 @@ a {
     background-color: #164d43;
 }
 
-.photo-button img {
+.photo-button img, .service-card > img {
     display: block;
     width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
 }
 
 .card-copy {
